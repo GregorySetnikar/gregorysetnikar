@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Introduction</title>
+    <title>Grégory SETNIKAR - Site Perso</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 <body>
@@ -18,6 +20,7 @@
                 <li><a href="teaching.html">Teaching</a></li>
                 <li><a href="research.html">Research</a></li>
             </ul>
+            <button onclick="switchLanguage()">Switch Language</button>
         </nav>
     </header>
 
@@ -26,11 +29,15 @@
             <h2>About Me</h2>
             <p>Add your brief introduction here.</p>
         </section>
+
+        <div id="google_translate_element"></div>
+
     </main>
 
     <footer>
         <p>&copy; 2024 Grégory SETNIKAR. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
