@@ -2,45 +2,76 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grégory SETNIKAR - Site Perso</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <title>Grégory Setnikar - Site Perso</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
     <header>
         <h1>Bienvenue sur mon site perso !</h1>
-        <nav>
+        <nav id="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="teaching.html">Enseignement</a></li>
+                <li>
+                    <a href="#">Enseignement</a>
+                    <ul>
+                        <li><a href="#">Agrégation</a></li>
+                        <li><a href="#">Cours</a></li>
+                    </ul>
+                </li>
                 <li><a href="research.html">Recherche</a></li>
                 <li><a href="perso.html"> Projets Annexes</a> </li>
             </ul>
-            <button onclick="switchLanguage()">Switch Language</button>
         </nav>
+
     </header>
 
-    <main>
-        <section>
-            <h2>À propos de moi</h2>
-            <p>Actuellement Ingénieur de Recherche au CNRS, j’ai réalisé ce site pour centraliser mes différents projets
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1">
+        <div class="title">À propos de moi</div>
+        <div class="container">
+            <p class="style1">Actuellement Ingénieur de Recherche au CNRS, j’ai réalisé ce site pour centraliser mes
+                différents projets
                 présents et futur. Bien qu’un peu pauvre en contenu pour le moment, il hébergera toutes sortes de
                 ressources pédagogiques ou scientifiques.</p>
-            <div id="google_translate_element"></div>
-        </section>
-
-
-    </main>
+            <p class="style2">
+                Escape Velocity is a free responsive<br class="mobile-hide" />
+                site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+            </p>
+            <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and
+                <strong>CSS3</strong>,
+                and released for
+                free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use
+                it
+                for any of
+                your personal or commercial projects &ndash; just be sure to credit us!</p>
+            <ul class="actions">
+                <li><a href="#" class="button style3 large">Proceed</a></li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Grégory SETNIKAR. All rights reserved.</p>
+        <div id="copyright">
+            <ul>
+                <li>&copy; 2024 Grégory SETNIKAR. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
