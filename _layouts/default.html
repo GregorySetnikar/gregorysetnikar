@@ -7,22 +7,25 @@
 </head>
 
 <body>
-  <section id="header" class="wrapper">
-    <!-- Logo -->
-    <div id="logo">
-      <h1><a href="index.html">Grégory Setnikar</a></h1>
-      <p>Bienvenue sur mon site perso !</p>
-    </div>
+  <div id="page-wrapper">
+    <section id="header" class="wrapper">
+      <!-- Logo -->
+      <div id="logo">
+        <h1><a href="index.html">Grégory Setnikar</a></h1>
+        <p>Bienvenue sur mon site perso !</p>
+      </div>
 
-    {% include nav.html %}
+      {% include nav.html %}
 
-  </section>
-  <section id="main" class="wrapper style2">
-    {{ content }}
-  </section>
-  {% include footer.html %}
+    </section>
+
+    <section id="main" class="wrapper style1">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
   </div>
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
   <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
