@@ -2,58 +2,22 @@
 <html lang="fr">
 
 <head>
-    <base href="/gregorysetnikar/">
-    <title>Titre de la page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="/assets/js/include.js" defer></script>
 </head>
 
-<body class="homepage is-preload">
-    <div id="page-wrapper">
+<body>
+    <div include-html="/assets/html/partials/nav.html"></div>
 
-        <!-- Header -->
-        <section id="header" class="wrapper">
+    <main>
+        <!-- Le contenu unique de chaque page ira ici -->
+        {{CONTENT}}
+    </main>
 
-            <!-- Logo -->
-            <div id="logo">
-                <h1><a href="#">Titre de la Page</a></h1>
-                <p>Sous-titre ou description courte</p>
-            </div>
-
-            <!-- Menu dynamique -->
-            <div id="menu-container"></div>
-        </section>
-
-        <!-- Main Content -->
-        <section id="main" class="wrapper style2">
-            <div class="title">Titre interne</div>
-            <div class="container">
-                <p>Contenu à venir...</p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <section id="footer" class="wrapper">
-            <div id="copyright">
-                <ul>
-                    <li>&copy; 2025 Grégory SETNIKAR. Tous droits réservés.</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.dropotron.min.js"></script>
-    <script src="../js/browser.min.js"></script>
-    <script src="../js/breakpoints.min.js"></script>
-    <script src="../js/util.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/include-nav.js"></script>
+    <div include-html="/assets/html/partials/footer.html"></div>
 </body>
 
 </html>
