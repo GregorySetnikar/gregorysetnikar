@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("menu-container");
     if (container) {
-        fetch("/includes/nav.html")
-            .then(res => res.text())
-            .then(html => {
+        fetch("/assets/html/nav.html")
+            .then((res) => res.text())
+            .then((html) => {
                 container.innerHTML = html;
 
-                // ➕ Réinitialiser Dropotron après insertion
+                // Initialisation de Dropotron après l’insertion
                 if (window.jQuery) {
                     $('#nav > ul').dropotron({
                         alignment: 'right',
@@ -16,10 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     console.warn("jQuery non chargé !");
                 }
-
             })
-            .catch(err => {
-                console.error("Erreur de chargement du menu :", err);
+            .catch((err) => {
+                console.error("Erreur lors du chargement du menu :", err);
             });
     }
 });
