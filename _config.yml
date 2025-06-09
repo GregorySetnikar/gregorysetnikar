@@ -2,3 +2,7 @@ title: Mon Site
 description: Mon super site avec Jekyll
 baseurl: "/gregorysetnikar" # à modifier si ton site est dans un sous-dossier
 url: "https://gregorysetnikar.github.io"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
